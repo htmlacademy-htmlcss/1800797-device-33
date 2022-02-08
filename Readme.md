@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кирилл Архангельский](https://up.htmlacademy.ru/htmlcss/33/user/1800797).
-* Наставник: [Владислав Донченко](https://htmlacademy.ru/profile/id608811);      Telegram:@vlad_donchenko11.
+* Наставник: [Владислав Донченко](https://htmlacademy.ru/profile/id608811)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
