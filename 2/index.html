@@ -8,21 +8,17 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Девайс</h1>
-      <img class="logo" src="" alt="Логотип Девайс">     
+      <a class="navigation-logo" href="index.html">
+        <img class="logo" src="" alt="Логотип Девайс">
+      </a> 
       <nav class="navigation">
+        <form action="https://echo.htmlacademy.ru/" method="get">
+            <label>
+              <input type="search" name="search" placeholder="Текст поиска">
+            </label>
+              <button type="submit">Найти</button>
+        </form>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label>
-                <!--<label for="search-field">
-                    <inpute type="text" name="search" placehoder="Текст поиска" id="search-field">-->
-                <input type="text" name="search" placeholder="Текст поиска">
-              </label>
-                <input type="submit" value="Найти">
-                <!--<button type="submit">Найти</button>-->
-              
-            </form>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
           </li>
@@ -33,15 +29,35 @@
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
+
+       
+        
+        <button class="navigation-button" type="button">Каталог товаров
+          <img class="button-img" src="" alt="кнопка каталог товаров">
+        </button>
+        <ul class="submenu-list">
+          <li class="submenu-item">
+            <a class="submenu-link" href="">Вирутальная реальность</a>       
+          </li>
+          <li class="submenu-item">
+            <a class="submenu-link" href="">Фитнесс браслеты</a>       
+          </li>
+          <li class="submenu-item">
+            <a class="submenu-link" href="">Квадрокоптер</a>       
+          </li>
+          <li class="submenu-item">
+            <a class="submenu-link" href="">Моноподы для селфи</a>       
+          </li>
+          <li class="submenu-item">
+            <a class="submenu-link" href="">Умные часы</a>       
+          </li>
+          <li class="submenu-item">
+            <a class="submenu-link" href="">Экшн Камеры</a>       
+          </li>
+        </ul>
+         
+
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <button class="navigation-button">Каталог товаров</button>
-          </li>
-          <li class="navigation-item">
-            <button class="navigation-button">
-              <img class="button-img" src="" alt="кнопка каталог товаров">
-            </button>
-          </li>
           <li class="navigation-item">
             <button class="navigation-button" type="button">Доставка</button>
           </li>
@@ -163,9 +179,7 @@
       <div class="delivery">
         <a class="delivery-link-picture" href="">
           <img class="delivery-track" src="" alt="Иконка грузовика">
-        </a>
-        <a class="delivery-link-text" href="">Доставим редкий товар под заказ</a>
-        <a class="delivery-link-info" href="">
+          <span class="delivery-text">Доставим редкий товар под заказ<span>
           <img class="delivery-info" src="" alt="значок информации">
         </a>
       </div>
@@ -187,10 +201,10 @@
         <p class="contacts-lower-case">Вы можете забрать товар сами, заехав в наш офис.<br>
           Заодно сможете проверить работоспособность покупки. </p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-        <addres class="contacts-address">
+        <address class="contacts-address">
           <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П</p>
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-        </addres>
+        </address>
         <h3 class="contacts-subtitle">Время работы</h3>
         <ul class="contacts-schedule">
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
@@ -201,8 +215,8 @@
       
       <section class="subcribe">
         <h2 class="subscribe-upper-case">Подпишитесь на рассылку</h2>
-        <p class="subscribe-lower-case">Еженедельный дайджест с обзорами новинок,<br>
-          длительными тест-драйвами, распаковками, а также акции<br>, спецпредложения и вот это вот всё.</p>
+        <p class="subscribe-lower-case">Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
             <input class="subscribe-mail" type="text" placeholder="Ваш e-mail">
@@ -212,6 +226,7 @@
           <label class="sheckbox-lower-case" for="subscribe-field">Это бесплатно</label>
         </form>
       </section>
+      </main>
 
       <footer class="page-footer">
         <div class="footer-address">          
@@ -221,22 +236,20 @@
             реки Карповки, 5, литера П.</p>
           </address>
         </div>
-        <div class="footer-services">
-          <ul class="footer-services-list>">
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="">Доставка</a>
-            </li>
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="">Гарантия</a>
-            </li>
-            <li class="footer-services-item">
-              <a class="footer-services-link" href="">Контакты</a>
-            </li>
-          </ul>
-        </div>
 
-        <section class="footer-social">
-          <h2 class="visually hidden">Социальные сети</h2>
+      
+          <ul class="footer-navigation-list>">
+            <li class="footer-navigation-item">
+              <button class="footer-navigation-button" type="button">Доставка</button>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="">Гарантия</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="">Контакты</a>
+            </li>
+          </ul> 
+         
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button-social" href="https://www.facebook.com/htmlacademy">
@@ -257,7 +270,7 @@
               </a>
             </li>
           </ul>
-        </section>
+       
 
         <div class="footer-phone-site">
           <address class="footer-phone-address">
@@ -266,13 +279,11 @@
           <a class="footer-site" href="https://htmlacademy.ru/">
             <img class="footer-site-img" src="" alt="html academy">
           </a>
-        </div>
-        
-
+        </div>       
       </footer>
 
 
-    </main>
+   
 
   </body>
 </html>
