@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-      <header class="page-header">
+      <header class="page-header-catalog">
         <h1 class="visually-hidden">Девайс</h1>
         <a class="navigation-logo" href="index.html">
           <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип Девайс">
         </a> 
         <nav class="navigation">
-          <form action="https://echo.htmlacademy.ru/" method="get">
-              <label>
-                <input class="navigation-search" type="search" name="search" placeholder="Текст поиска">
-              </label>
-                <button class="navigation-search" type="submit">Найти</button>
+          <form class="navigation-search" action="https://echo.htmlacademy.ru/" method="get">
+            <label>
+              <input class="navigation-search-input" type="search" name="search" placeholder="Текст поиска">
+            </label>
+              <button class="navigation-search-submit" type="submit">Найти</button>
           </form>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
               <a class="navigation-link" href="#">Коля Петухов</a>
             </li>
             <li class="navigation-item">
@@ -35,33 +35,29 @@
   
          
           
-          <button class="button" type="button">Каталог товаров
+          <a class="button" href="">Каталог товаров
             <svg width="50" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".3" cx="25" cy="25.39" r="24" stroke="#000" stroke-width="2"/><g opacity=".3" clip-path="url(#a)"><path d="M33 24.39h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(17 17.39)" d="M0 0h16v16H0z"/></clipPath></defs></svg>
-          </button>
-          <ul class="submenu-list">
-            <li class="submenu-item">
-              <a class="submenu-link" href="">Вирутальная реальность</a>       
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-link" href="">Фитнесс браслеты</a>       
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-link" href="">Квадрокоптер</a>       
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-link" href="">Моноподы для селфи</a>       
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-link" href="">Умные часы</a>       
-            </li>
-            <li class="submenu-item">
-              <a class="submenu-link" href="">Экшн Камеры</a>       
-            </li>
-          </ul>
+          </a>
+          <div class="submenu">            
+            <ul class="submenu-list">
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Вирутальная реальность</a>       
+                <a class="submenu-link" href="">Фитнесс браслеты</a>
+                <a class="submenu-link" href="">Квадрокоптер</a>       
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Моноподы для селфи</a>
+                <a class="submenu-link" href="">Умные часы</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Экшн Камеры</a>       
+              </li>
+            </ul>
+          </div>
            
   
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li class="navigation-list-item">
               <a href="#" class="button">Доставка</a>
             </li>
             <li class="navigation-item">
@@ -74,7 +70,7 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main">
         
           <h1 class="inner-title device-upper-case">Моноподы для селфи</h1>
             <div class="inner-menu">
@@ -170,30 +166,38 @@
         
             <ul class="product-list">
               <li class="product-item">
-                <a class="product-list  catalog-filter-title">
-                  <img class="product-img" src="images/catalog/selfi-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <a class="product-link-catalog  catalog-filter-title">
+                  <div class="product-img-catalog">
+                    <img class="product-img" src="images/catalog/selfi-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  </div>
                   <h3 class="product-name">Любительская селфи-палка</h3>                  
                 </a>
                 <button class="button button-yellow" type="button">Подробнее</button>
                 <b class="product-price">500 Р</b>
               </li>
               <li class="product-item">
-                <a class="product-list catalog-filter-title" href="">
-                  <img class="product-img" src="images/catalog/prof-self-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <a class="product-link-catalog catalog-filter-title" href="">
+                  <div class="product-img-catalog">
+                    <img class="product-img" src="images/catalog/prof-self-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  </div>
                   <h3 class="product-name">Профессиональная селфи-палка</h3>                  
                 </a>
                 <b class="product-price">1500 Р</b>
               </li>
               <li class="product-item">
-                <a class="product-list catalog-filter-title" href="">
-                  <img class="product-img" src="images/catalog/unsinkable-self-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <a class="product-link-catalog catalog-filter-title" href="">
+                  <div class="product-img-catalog">
+                    <img class="product-img" src="images/catalog/unsinkable-self-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  </div>
                   <h3 class="product-name">Непотопляемая селфи-палка</h3>                  
                 </a>
                 <b class="product-price">2500 Р</b>
               </li>
               <li class="product-item">
-                <a class="product-list catalog-filter-title" href="">
-                  <img class="product-img" src="images/catalog/followme-self-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <a class="product-link-catalog catalog-filter-title" href="">
+                  <div class="product-img-catalog">
+                    <img class="product-img" src="images/catalog/followme-self-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  </div>
                   <h3 class="product-name">Селфи-палка "Следуй за мной"</h3>                  
                 </a>
                 <b class="product-price">1500 Р</b>
