@@ -40,11 +40,16 @@ img {
 }
 
 body {
+    display: flex;
+    flex-direction: column;      
     font-family: "Rubik", "Tahoma" sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
     background-color: #fbf7f4;
+
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 
 .button {
@@ -60,6 +65,7 @@ body {
     display: block;
     border: none;
     background: none;
+    
 }
 
 
@@ -90,6 +96,20 @@ body {
 
 /* header */
 
+.navigation {
+    
+    width: 1160px;
+    margin: 0 auto;
+    
+}
+
+.nav-up {
+    width: 1040px;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 .navigation-logo {
     display: block;
 }
@@ -100,6 +120,10 @@ body {
 
 .page-header-catalog {
    background: #FFE17F;
+}
+
+.navigation-search {
+    width: 517px;
 }
 
 .navigation-search-input {
@@ -122,15 +146,40 @@ body {
     
 
 }
+.navigation-user {
+    display: flex;
+    width: 500px;
+}
+
 .navigation-link {
     font-family: "Rubik", "Tahoma", sans-serif;
     font-weight: 400;
     color: #000000;
     text-decoration: none;
     display: block;
+   
+    
 
 }
 
+.nav-down {
+    width: 1040;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.header-catalog-button {
+    width: 293px;
+}
+
+.navigation-list {
+    display: grid;
+    width: 471px;
+    margin-left: auto;
+}
+
+}
 
 .submenu-link {
     font-family: "Rubik", "Tahoma", sans-serif;
@@ -164,6 +213,7 @@ body {
 
 .slider-content {
     position: relative;
+    display: flex;
 }
 
 .slider-item::before {
@@ -202,8 +252,18 @@ body {
 
 /* Main-index */
 
+.page-container {
+    margin: 0 auto;
+    width: 1160px;
+}
 
+.product-list {
+    display: grid;
+}
 
+.product-item {
+    width: 160px;
+}
 
 .product-link {
     text-decoration: none;
@@ -229,6 +289,17 @@ body {
 
 .services {
     background: linear-gradient(0deg, rgb(240, 240, 240) 74%, rgb(255, 255, 255) 50%);
+    display: flex;
+}
+
+.services-button {
+    width: 280px;
+
+}
+
+.services-description {
+    width: 694px;
+    padding: 72.5px 63px 72.5px 116px;
 }
 
 .services-description-item-delivery {
@@ -259,7 +330,13 @@ body {
     background-color: #f0f0f0;
     text-align: center;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 
+}
+
+.delivery-text {
+    flex-grow:1;
 }
 
 .delivery-track {
@@ -271,7 +348,18 @@ body {
     background: rgba(220, 220, 220, 0.5);
 }
 
-    
+.about-contacts {
+    display: grid;
+}
+
+.about{
+    width: 520px;
+    margin-right: 102px;
+}
+
+.contacts {
+    width: 532px;
+}
 
 .about-item {
     font-family: "Rubik Narrow", "Tahoma", sans-serif;
@@ -300,9 +388,26 @@ body {
 }
 
 .subcribe {
-    background-color: #f0f0f0
-
+    background-color: #f0f0f0; 
 }
+
+.subscribe-text {
+    display: grid;
+}
+
+.subscribe-low {
+    display: flex;
+}
+
+.subscribe-form {
+    width: 810px;
+}
+
+.free {
+    width: 160px;
+    margin-left: auto;
+}
+
 .subscribe-mail {
     font-family: "Rubik", "Tahoma", sans-serif;
     font-size: 18px;
@@ -312,8 +417,14 @@ body {
 
 /* Catalog */
 
+.breadcrumbs {
+    display: flex;
+    width: 429px;
+}
+
 .breadcrumbs-link {
     display: inline-block;
+    margin-right: 36px;
 }
 
 .main-inner {
@@ -332,6 +443,17 @@ body {
 }
 
 
+.catalog-products {
+    display: flex;
+}
+
+.catalog-filter {
+    width: 320px;
+}
+
+.catalog-menu-wrapper {
+    width: 840px;
+}
 
 
 
@@ -409,6 +531,35 @@ body {
 
 .page-footer {
     background-color: #444444;
+}
+
+.page-footer-container {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.footer-address {
+    width: 239px;
+    margin-right: 112px;
+}
+
+.footer-menu-social {
+    width: 444px;
+}
+
+.footer-navigation-list {
+    display: grid;
+}
+
+.footer-social-list {
+    display: flex;
+}
+
+.footer-phone-site {
+    width: 175px;
+    margin: 0 auto;
 }
 
 .footer-contacts-address-text {
