@@ -1,7 +1,7 @@
 const link = document.querySelector('.navigation-catalog-link');
 const menu = document.querySelector('.navigation-catalog');
 
-const modalLink = document.querySelector('.contacts-btn');
+const modalLink = document.querySelector('.delivery-link');
 const modal = document.querySelector('.modal-container');
 const modalClose = document.querySelector('.modal-close-button');
 
